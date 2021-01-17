@@ -1,5 +1,5 @@
 {
-  "name": "download-unzip-taurus",
+  "name": "@taraus-he/taurus-download-unzip",
   "version": "1.0.0-alpha",
   "description": "A simple http file downloader and unzipper for node.js",
   "main": "./dist/index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Taraus-He/download-unzip-node.git"
+    "url": "git+https://github.com/taurus-hh/unzip-download-taurus.git"
   },
   "author": "taraus",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Taraus-He/download-unzip-node/issues"
+    "url": "https://github.com/taurus-hh/unzip-download-taurus/issues"
   },
-  "homepage": "https://github.com/Taraus-He/download-unzip-node#readme",
+  "homepage": "https://github.com/taurus-hh/unzip-download-taurus/#readme",
   "dependencies": {
     "yauzl": "^2.10.0"
   },
@@ -37,10 +37,10 @@
   "optionalDependencies": {
     "@types/yauzl": "^2.9.1"
   },
-  "types": "types/index.d.ts",
+  "types": "./types/index.d.ts",
   "files": [
     "src",
-    "dist/*.js",
-    "types/*.d.ts"
+    "dist",
+    "types"
   ]
 }
