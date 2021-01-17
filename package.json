@@ -1,6 +1,6 @@
 {
   "name": "@taraus-he/tdunzip",
-  "version": "1.0.0-alpha",
+  "version": "1.0.1",
   "description": "A simple http file downloader and unzipper for node.js",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
@@ -19,6 +19,14 @@
     "url": "https://github.com/taurus-hh/unzip-download-taurus/issues"
   },
   "homepage": "https://github.com/taurus-hh/unzip-download-taurus/#readme",
+  "keywords": [
+    "electron",
+    "typesript",
+    "javascript",
+    "node",
+    "unzip",
+    "download"
+  ],
   "dependencies": {
     "yauzl": "^2.10.0"
   },
@@ -39,7 +47,6 @@
   },
   "types": "./types/index.d.ts",
   "files": [
-    "src",
     "dist",
     "types"
   ]
