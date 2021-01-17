@@ -1,0 +1,29 @@
+{
+  "name": "download-unzip",
+  "version": "1.0.0-alpha",
+  "description": "A simple http file downloader and unzipper for node.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.es.js",
+  "types": "./types/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist && rm -rf types",
+    "build": "npm run clean && rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Taraus-He/download-unzip-node.git"
+  },
+  "author": "taraus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Taraus-He/download-unzip-node/issues"
+  },
+  "homepage": "https://github.com/Taraus-He/download-unzip-node#readme",
+  "files": [
+    "dist/*",
+    "types/*"
+  ],
+  
+  "sideEffects": false
+}
