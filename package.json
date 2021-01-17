@@ -1,5 +1,5 @@
 {
-  "name": "@taraus-he/taurus-download-unzip",
+  "name": "@taraus-he/tdunzip",
   "version": "1.0.0-alpha",
   "description": "A simple http file downloader and unzipper for node.js",
   "main": "./dist/index.js",

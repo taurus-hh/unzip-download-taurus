@@ -3,10 +3,10 @@ A simple http file downloader and unzipper for node.js
 ## Install
 
 ```
-$ npm install --save download-unzip-node
+$ npm install --save @taraus-he/tdunzip
 ```
 ```
-$ yarn add download-unzip-node
+$ yarn add @taraus-he/tdunzip
 ```
 ## download
 Features:
