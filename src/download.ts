@@ -5,7 +5,7 @@ import * as http from "http";
 import * as https from "https";
 import * as URL from "url";
 import { mkdirp, remove } from "./helps";
-export type resolveConfig = (value?: {} | PromiseLike<{}> | undefined) => void;
+export type resolveConfig = (value?: doneConfig | {} | PromiseLike<{}> | undefined) => void;
 export type rejectConfig = (reason?: any) => void;
 export interface defaultOptsConfig {
   method: string;

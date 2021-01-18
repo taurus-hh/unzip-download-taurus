@@ -39,7 +39,6 @@ export class Extractor extends EventEmitter {
       // 解压完成
       this.zipfile.on("close", () => {
         if (!this.canceled) {
-          console.log("zip extraction complete, bytesCount:" + bytesCount);
           this.emit("unzip.done", {
             done: entryCount === total,
             bytesCount,

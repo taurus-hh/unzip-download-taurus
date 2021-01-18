@@ -2,7 +2,7 @@
 import { EventEmitter } from "events";
 import * as http from "http";
 import * as https from "https";
-export declare type resolveConfig = (value?: {} | PromiseLike<{}> | undefined) => void;
+export declare type resolveConfig = (value?: doneConfig | {} | PromiseLike<{}> | undefined) => void;
 export declare type rejectConfig = (reason?: any) => void;
 export interface defaultOptsConfig {
     method: string;
