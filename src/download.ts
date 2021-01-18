@@ -232,7 +232,11 @@ export class DownLoader extends EventEmitter {
           path: this.filePath,
           fileName: this.fileName
         });
-        resolve(true);
+        resolve({
+          done: this.fileSize === this.transfer,
+          path: this.filePath,
+          fileName: this.fileName
+        });
       })
       .on("error", err => {
         this.emit("error", err);
