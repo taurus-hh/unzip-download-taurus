@@ -18,6 +18,18 @@ export interface optionConfig {
   fileName?: string;
   config?: any;
 }
+export interface doneConfig {
+  done: boolean;
+  path: string,
+  fileName: string,
+}
+export interface progressConfig {
+  progress: number
+  total: number,
+  transfer: number,
+  speed: number,
+  rest: number
+}
 /**
  * Download file to local disk, is used for node/electron
  *
@@ -228,15 +240,13 @@ export class DownLoader extends EventEmitter {
     res
       .pipe(fileStream)
       .on("finish", () => {
-        this.emit("complete", {
-          path: this.filePath,
-          fileName: this.fileName
-        });
-        resolve({
+        const result: doneConfig = {
           done: this.fileSize === this.transfer,
           path: this.filePath,
           fileName: this.fileName
-        });
+        }
+        this.emit("complete", result);
+        resolve(result);
       })
       .on("error", err => {
         this.emit("error", err);

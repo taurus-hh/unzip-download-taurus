@@ -15,6 +15,18 @@ export interface optionConfig {
     fileName?: string;
     config?: any;
 }
+export interface doneConfig {
+    done: boolean;
+    path: string;
+    fileName: string;
+}
+export interface progressConfig {
+    progress: number;
+    total: number;
+    transfer: number;
+    speed: number;
+    rest: number;
+}
 /**
  * Download file to local disk, is used for node/electron
  *
